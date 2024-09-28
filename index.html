@@ -1,0 +1,149 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Магазин игр</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Подключите свой CSS, если нужно -->
+    <style>
+        body {
+            font-family: "Rubik Mono One", monospace;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom right, #1a1a2e, #16213e, #0f3460); /* Градиентный фон */
+            color: #ffffff; /* Цвет текста для контраста */
+        }
+        header {
+            background: rgba(50, 50, 50, 0.8); /* Полупрозрачный фон */
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+            border-bottom: 3px solid #007bff; /* Нижняя рамка */
+        }
+        h1 {
+            font-size: 2.5em; /* Увеличенный размер заголовка */
+            margin: 0;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 15px 0 0; /* Отступы для навигации */
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 20px; /* Увеличенные отступы между пунктами меню */
+        }
+        nav ul li a {
+            color: #007bff; /* Цвет ссылок */
+            text-decoration: none;
+            font-size: 1.2em; /* Увеличенный размер текста */
+            transition: color 0.3s; /* Плавный переход цвета */
+        }
+        nav ul li a:hover {
+            color: #ffcc00; /* Цвет при наведении */
+        }
+        main {
+            padding: 20px;
+            max-width: 800px; /* Установка максимальной ширины контента */
+            margin: auto; /* Центрирование */
+        }
+        .game {
+            background: rgba(255, 255, 255, 0.2); /* Полупрозрачный белый фон */
+            margin: 10px 0;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+        }
+        button {
+            background: #007bff;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s, transform 0.2s;
+            font-size: 16px;
+        }
+        button:hover {
+            background: #0056b3;
+        }
+        button:active {
+            transform: scale(0.95); /* Сжатие кнопки при нажатии */
+            background: #004494; /* Темнее цвет при нажатии */
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #333;
+            color: white;
+        }
+        #contact {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Магазин игр
+            <img src="https://cdn-icons-png.flaticon.com/128/9968/9968344.png" alt="Игровое лого">
+        </h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Главная</a></li>
+                <li><a href="#games">Игры</a></li>
+                <li><a href="#contact">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h2>Добро пожаловать в наш магазин!</h2>
+            <p>Здесь вы можете найти лучшие игры по самым выгодным ценам.</p>
+        </section>
+
+        <section id="games">
+            <h2>Наши игры</h2>
+            <div class="game">
+                <h3>OUTLAST Trials</h3>
+                <img src="https://cdn1.epicgames.com/6504cc61472e498796e0b4963a201438/offer/EGS_TheOutlastTrials_RedBarrels_S2-1200x1600-c70676de7925195513fa7bc4bc2f1d9b.jpg" alt="Игра 1" width="200">
+
+
+
+                <p>Это кооперативный survival horror, являющийся ответвлением от основной серии Outlast...</p>
+                <p>Цена: <strong>1000 руб.</strong></p>
+                <button onclick="window.location.href='https://example.com/outlast_payment';">Купить</button>
+            </div>
+            <div class="game">
+                <h3>Forza Horizon 5</h3>
+                <img src="https://upload.wikimedia.org/wikipedia/ru/5/58/%D0%9E%D0%B1%D0%BB%D0%BE%D0%B6%D0%BA%D0%B0_Forza_Horizon_5.jpg" alt="Игра 2" width="200">
+                <p>Forza Horizon 5 — компьютерная гоночная игра 2021 года...</p>
+                <p>Цена: <strong>1500 руб.</strong></p>
+                <button onclick="window.location.href='https://example.com/forza_payment';">Купить</button>
+            </div>
+            <div class="game">
+                <h3>Dying Light: The Following</h3>
+                <img src="https://newcdn.igromania.ru/mnt/articles/d/c/b/5/0/6/26171/html/img/ca56e3ab29e780a3.jpg" alt="Игра 3" width="200">
+                <p>Dying Light – это игра в стиле экшн от первого лица...</p>
+                <p>Цена: <strong>500 руб.</strong></p>
+                <button onclick="window.location.href='https://example.com/dyinglight_payment';">Купить</button>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Наши контакты</h2>
+            <p>Телефон: <strong>+7 (123) 456-78-90</strong></p>
+            <p>Email: <strong>info@gamestore.ru</strong></p>
+            <p>Адрес: <strong>Город, Улица, 1</strong></p>
+        </section>
+    </main> 
+
+    <footer>
+        <p>&copy; 2023 Магазин игр. Все права защищены.</p>
+    </footer>
+</body>
+</html>
